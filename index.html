@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo Único Contato | Centralize seu Atendimento</title>
     
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
@@ -27,13 +29,28 @@
                             green: '#71FF4A',
                             dark: '#0B0F19',
                             card: '#131826'
+                        },
+                        meta: {
+                            blue: '#0668E1',
+                            teal: '#0080FB'
                         }
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                     },
-                    backgroundImage: {
-                        'hero-glow': 'radial-gradient(circle at center, rgba(68, 118, 255, 0.15) 0%, rgba(11, 15, 25, 0) 70%)',
+                    animation: {
+                        'scroll': 'scroll 40s linear infinite',
+                        'shine': 'shine 3s infinite',
+                    },
+                    keyframes: {
+                        scroll: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        },
+                        shine: {
+                            '0%': { transform: 'translateX(-100%)' },
+                            '100%': { transform: 'translateX(100%)' }
+                        }
                     }
                 }
             }
@@ -58,7 +75,7 @@
                 <a href="#recursos" class="text-sm text-gray-300 hover:text-brand-green transition-colors">Recursos</a>
                 <a href="#beneficios" class="text-sm text-gray-300 hover:text-brand-green transition-colors">Benefícios</a>
                 
-                <a href="#" class="btn-primary relative px-6 py-2.5 rounded-full font-bold text-sm text-brand-dark bg-brand-green overflow-hidden group transition-all hover:shadow-[0_0_20px_rgba(113,255,74,0.4)]">
+                <a href="https://form.respondi.app/K2mBNj24?src=&utm_campaign=fz_leads_google&utm_content=&utm_medium=cpc&utm_source=gogleads&utm_term=" target="_blank" class="btn-primary relative px-6 py-2.5 rounded-full font-bold text-sm text-brand-dark bg-brand-green overflow-hidden group transition-all hover:shadow-[0_0_20px_rgba(113,255,74,0.4)]">
                     <span class="relative z-10 flex items-center gap-2">
                         Falar com Consultor <i class="fa-solid fa-arrow-right -rotate-45 group-hover:rotate-0 transition-transform duration-300"></i>
                     </span>
@@ -79,7 +96,7 @@
         <a href="#solucoes" class="text-2xl font-semibold hover:text-brand-green">Soluções</a>
         <a href="#recursos" class="text-2xl font-semibold hover:text-brand-green">Recursos</a>
         <a href="#beneficios" class="text-2xl font-semibold hover:text-brand-green">Benefícios</a>
-        <a href="#" class="px-8 py-3 rounded-full bg-brand-green text-brand-dark font-bold text-lg">Falar com Consultor</a>
+        <a href="https://form.respondi.app/K2mBNj24?src=&utm_campaign=fz_leads_google&utm_content=&utm_medium=cpc&utm_source=gogleads&utm_term=" target="_blank" class="px-8 py-3 rounded-full bg-brand-green text-brand-dark font-bold text-lg">Falar com Consultor</a>
     </div>
 
     <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 overflow-hidden">
@@ -102,21 +119,12 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <button class="px-8 py-4 rounded-xl bg-brand-blue text-white font-bold hover:bg-brand-blue/90 transition-all shadow-[0_10px_30px_-10px_rgba(68,118,255,0.5)] transform hover:-translate-y-1">
+                    <a href="https://form.respondi.app/K2mBNj24?src=&utm_campaign=fz_leads_google&utm_content=&utm_medium=cpc&utm_source=gogleads&utm_term=" target="_blank" class="px-8 py-4 rounded-xl bg-brand-blue text-white font-bold hover:bg-brand-blue/90 transition-all shadow-[0_10px_30px_-10px_rgba(68,118,255,0.5)] transform hover:-translate-y-1 text-center">
                         Começar Agora
-                    </button>
-                    <button class="glass-btn px-8 py-4 rounded-xl text-white font-bold border border-white/20 hover:border-brand-green/50 hover:text-brand-green transition-all backdrop-blur-md flex items-center justify-center gap-3">
-                        <i class="fa-regular fa-circle-play"></i> Ver Demonstração
-                    </button>
-                </div>
-
-                <div class="mt-12 flex items-center gap-6 text-gray-500 text-sm font-medium">
-                    <div class="flex -space-x-3">
-                        <div class="w-10 h-10 rounded-full border-2 border-brand-dark bg-gray-700"></div>
-                        <div class="w-10 h-10 rounded-full border-2 border-brand-dark bg-gray-600"></div>
-                        <div class="w-10 h-10 rounded-full border-2 border-brand-dark bg-gray-500"></div>
-                    </div>
-                    <p>+500 empresas já unificaram</p>
+                    </a>
+                    <a href="#recursos" class="glass-btn px-8 py-4 rounded-xl text-white font-bold border border-white/20 hover:border-brand-green/50 hover:text-brand-green transition-all backdrop-blur-md flex items-center justify-center gap-3 text-center">
+                        <i class="fa-regular fa-circle-play"></i> Ver Soluções
+                    </a>
                 </div>
             </div>
 
@@ -151,12 +159,12 @@
                         <div class="w-2/3 bg-brand-dark/50 rounded-lg p-4 border border-white/5">
                             <div class="flex justify-end mb-4">
                                 <div class="bg-brand-blue/20 text-brand-blue text-xs px-3 py-2 rounded-tr-xl rounded-bl-xl rounded-tl-xl max-w-[80%]">
-                                    Olá! Como posso ajudar sua empresa hoje?
+                                    Olá! Gostaria de otimizar meu atendimento.
                                 </div>
                             </div>
                             <div class="flex justify-start">
                                 <div class="bg-white/10 text-white text-xs px-3 py-2 rounded-tl-xl rounded-br-xl rounded-tr-xl max-w-[80%]">
-                                    Gostaria de conhecer os planos do Grupo Único.
+                                    Claro! Com o Grupo Único você centraliza tudo agora mesmo.
                                 </div>
                             </div>
                         </div>
@@ -173,15 +181,93 @@
         </div>
     </header>
 
-    <section class="py-10 border-y border-white/5 bg-black/20">
-        <div class="max-w-7xl mx-auto px-6">
-            <p class="text-center text-gray-500 text-sm mb-8 uppercase tracking-widest">Plataforma validada por grandes times</p>
-            <div class="flex flex-wrap justify-center gap-12 lg:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-                <i class="fa-brands fa-aws text-4xl hover:text-white transition-colors"></i>
-                <i class="fa-brands fa-google text-4xl hover:text-white transition-colors"></i>
-                <i class="fa-brands fa-meta text-4xl hover:text-blue-500 transition-colors"></i>
-                <i class="fa-brands fa-shopify text-4xl hover:text-green-500 transition-colors"></i>
-                <i class="fa-brands fa-stripe text-4xl hover:text-indigo-400 transition-colors"></i>
+    <section class="py-12 border-y border-white/5 bg-black/20 overflow-hidden relative">
+        <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-brand-dark to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-brand-dark to-transparent z-10 pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
+            <p class="text-gray-500 text-sm font-medium uppercase tracking-[0.2em]">Grandes redes confiam no Grupo Único</p>
+        </div>
+
+        <div class="flex w-full">
+            <div class="flex animate-scroll gap-12 lg:gap-24 items-center whitespace-nowrap min-w-full pl-12">
+                <img src="img/entrefarmas.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Entrefarma">
+                <img src="img/redesoma.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Rede Soma">
+                <img src="img/redeinova.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Rede Inova">
+                <img src="img/abrafad.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Abrafad">
+                <img src="img/febrafar.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Febrafar">
+                <img src="img/petsdiniz.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Pets Diniz">
+                <img src="img/farmarcas.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Farmarcas">
+                <img src="img/atacadaodrogacenter.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Atacadão Droga Center">
+                <img src="img/drogariasbrasileiras.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Drogarias Brasileiras">
+                <img src="img/ultrapopular.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+                <img src="img/entrefarmas.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Entrefarma">
+                <img src="img/redesoma.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Rede Soma">
+                <img src="img/redeinova.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Rede Inova">
+                <img src="img/abrafad.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Abrafad">
+                <img src="img/febrafar.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Febrafar">
+                <img src="img/petsdiniz.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Pets Diniz">
+                <img src="img/farmarcas.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Farmarcas">
+                <img src="img/atacadaodrogacenter.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Atacadão Droga Center">
+                <img src="img/drogariasbrasileiras.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Drogarias Brasileiras">
+                <img src="img/ultrapopular.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+                <img src="img/mcx.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+                <img src="img/melhorcompra.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+                <img src="img/oriente.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+                <img src="img/oriente.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+                <img src="img/petsdiniz.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+                <img src="img/redeinova.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+                <img src="img/redesoma.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+                <img src="img/smallfarma.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+                <img src="img/uaifarma.webp" class="h-10 lg:h-12 w-auto object-contain brightness-0 invert opacity-40 hover:opacity-100 hover:brightness-100 hover:invert-0 transition-all duration-300 cursor-pointer" alt="Ultra Popular">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-meta-blue/5 via-transparent to-brand-green/5 opacity-50"></div>
+        
+        <div class="max-w-5xl mx-auto" data-aos="fade-up">
+            <div class="glass-card rounded-3xl p-8 lg:p-12 border border-white/10 relative overflow-hidden group hover:border-meta-blue/30 transition-all duration-500">
+                <div class="absolute top-0 bottom-0 left-0 w-20 bg-white/5 skew-x-12 blur-xl animate-shine pointer-events-none"></div>
+
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="relative shrink-0">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-br from-meta-blue to-meta-teal p-1 shadow-[0_0_40px_rgba(6,104,225,0.4)]">
+                            <div class="w-full h-full rounded-full bg-brand-dark flex items-center justify-center relative overflow-hidden">
+                                <i class="fa-brands fa-meta text-5xl text-white z-10"></i>
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvc3ZnPg==')] opacity-30"></div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-2 -right-2 bg-brand-green text-brand-dark px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider border-2 border-brand-dark shadow-lg flex items-center gap-1">
+                            <i class="fa-solid fa-check-circle"></i> Oficial
+                        </div>
+                    </div>
+
+                    <div class="text-center md:text-left">
+                        <div class="inline-block px-3 py-1 rounded border border-meta-blue/30 bg-meta-blue/10 text-meta-blue text-xs font-bold uppercase tracking-widest mb-3">
+                            Parceiro Certificado
+                        </div>
+                        <h2 class="text-2xl lg:text-3xl font-bold mb-4">
+                            Sua empresa segura com selo <span class="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Meta BSP</span>
+                        </h2>
+                        <p class="text-gray-400 text-sm lg:text-base leading-relaxed mb-6">
+                            O Grupo Único Contato é um <strong>Business Solution Provider</strong>. Isso significa que utilizamos a API Oficial do WhatsApp (WABA), garantindo estabilidade máxima, segurança de dados e risco zero de bloqueios por uso indevido.
+                        </p>
+                        
+                        <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                            <div class="flex items-center gap-2 text-xs font-semibold text-gray-300 bg-white/5 px-3 py-2 rounded-lg">
+                                <i class="fa-solid fa-shield-halved text-brand-green"></i> Anti-bloqueio
+                            </div>
+                            <div class="flex items-center gap-2 text-xs font-semibold text-gray-300 bg-white/5 px-3 py-2 rounded-lg">
+                                <i class="fa-solid fa-bolt text-yellow-400"></i> Alta Performance
+                            </div>
+                            <div class="flex items-center gap-2 text-xs font-semibold text-gray-300 bg-white/5 px-3 py-2 rounded-lg">
+                                <i class="fa-solid fa-certificate text-blue-400"></i> Selo Verde (Opcional)
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -261,9 +347,9 @@
                             <i class="fa-solid fa-check text-brand-green"></i> Etiquetas e categorização
                         </li>
                     </ul>
-                    <button class="w-fit text-brand-blue font-bold group flex items-center gap-2 hover:gap-4 transition-all">
+                    <a href="https://form.respondi.app/K2mBNj24?src=&utm_campaign=fz_leads_google&utm_content=&utm_medium=cpc&utm_source=gogleads&utm_term=" target="_blank" class="w-fit text-brand-blue font-bold group flex items-center gap-2 hover:gap-4 transition-all">
                         Explorar interface <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+                    </a>
                 </div>
                 <div class="md:w-1/2 bg-gray-800/50 relative">
                     <div class="absolute top-10 left-10 right-0 bottom-0 bg-brand-dark rounded-tl-3xl border-l border-t border-white/10 shadow-2xl p-6">
@@ -292,17 +378,17 @@
             <h2 class="text-4xl lg:text-6xl font-black mb-8">Pronto para <span class="text-brand-blue">evoluir</span> seu atendimento?</h2>
             <p class="text-xl text-gray-400 mb-12">Junte-se ao Grupo Único e tenha o controle total da sua comunicação empresarial.</p>
             
-            <a href="#" class="inline-block px-10 py-5 rounded-full bg-brand-green text-brand-dark text-lg font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(113,255,74,0.3)]">
+            <a href="https://form.respondi.app/K2mBNj24?src=&utm_campaign=fz_leads_google&utm_content=&utm_medium=cpc&utm_source=gogleads&utm_term=" target="_blank" class="inline-block px-10 py-5 rounded-full bg-brand-green text-brand-dark text-lg font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(113,255,74,0.3)]">
                 Falar com especialista agora
             </a>
-            <p class="mt-6 text-sm text-gray-500">Sem compromisso. Teste gratuito disponível.</p>
+            <p class="mt-6 text-sm text-gray-500">Sem compromisso. Responda nosso formulário rápido.</p>
         </div>
     </section>
 
     <footer class="border-t border-white/10 bg-black/40 pt-16 pb-8 px-6 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-12">
             <div class="col-span-1 md:col-span-2">
-                 <img src="img/logo.webp" alt="Grupo Único" class="w-32 brightness-0 invert mb-6 opacity-80">
+                <img src="img/logo.webp" alt="Grupo Único" class="w-32 brightness-0 invert mb-6 opacity-80">
                 <p class="text-gray-400 max-w-sm">Soluções integradas de comunicação para empresas que buscam alta performance e satisfação do cliente.</p>
             </div>
             <div>
@@ -323,7 +409,7 @@
             </div>
         </div>
         <div class="text-center text-gray-600 text-sm border-t border-white/5 pt-8">
-            &copy; 2024 Grupo Único Contato. Todos os direitos reservados.
+            &copy; 2025 Grupo Único Contato. Todos os direitos reservados.
         </div>
     </footer>
 
