@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Único Contato | Centralize seu Atendimento</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#4476FF',
+                            green: '#71FF4A',
+                            dark: '#0B0F19',
+                            card: '#131826'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-glow': 'radial-gradient(circle at center, rgba(68, 118, 255, 0.15) 0%, rgba(11, 15, 25, 0) 70%)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-white overflow-x-hidden relative selection:bg-brand-green selection:text-brand-dark">
+
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-brand-blue/20 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-brand-blue/10 rounded-full blur-[100px]"></div>
+    </div>
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 border-b border-white/5 bg-brand-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="w-40 relative group">
+                <img src="img/logo.webp" alt="Grupo Único Contato" class="w-full h-auto brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity">
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#solucoes" class="text-sm text-gray-300 hover:text-brand-green transition-colors">Soluções</a>
+                <a href="#recursos" class="text-sm text-gray-300 hover:text-brand-green transition-colors">Recursos</a>
+                <a href="#beneficios" class="text-sm text-gray-300 hover:text-brand-green transition-colors">Benefícios</a>
+                
+                <a href="#" class="btn-primary relative px-6 py-2.5 rounded-full font-bold text-sm text-brand-dark bg-brand-green overflow-hidden group transition-all hover:shadow-[0_0_20px_rgba(113,255,74,0.4)]">
+                    <span class="relative z-10 flex items-center gap-2">
+                        Falar com Consultor <i class="fa-solid fa-arrow-right -rotate-45 group-hover:rotate-0 transition-transform duration-300"></i>
+                    </span>
+                    <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-white">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-brand-dark/95 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center gap-8">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-3xl text-white">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="#solucoes" class="text-2xl font-semibold hover:text-brand-green">Soluções</a>
+        <a href="#recursos" class="text-2xl font-semibold hover:text-brand-green">Recursos</a>
+        <a href="#beneficios" class="text-2xl font-semibold hover:text-brand-green">Benefícios</a>
+        <a href="#" class="px-8 py-3 rounded-full bg-brand-green text-brand-dark font-bold text-lg">Falar com Consultor</a>
+    </div>
+
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-green/30 bg-brand-green/5 backdrop-blur-sm text-brand-green text-xs font-bold uppercase tracking-wider mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-green animate-pulse"></span>
+                    Revolução no Atendimento
+                </div>
+                
+                <h1 class="text-5xl lg:text-7xl font-black leading-tight mb-6">
+                    Centralize. <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-white">Automatize.</span> <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-300">Escale.</span>
+                </h1>
+                
+                <p class="text-lg text-gray-400 mb-8 max-w-lg leading-relaxed">
+                    Unifique WhatsApp, Instagram, Telegram e Webchat em uma única plataforma inteligente. Transforme seu suporte em uma máquina de vendas.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="px-8 py-4 rounded-xl bg-brand-blue text-white font-bold hover:bg-brand-blue/90 transition-all shadow-[0_10px_30px_-10px_rgba(68,118,255,0.5)] transform hover:-translate-y-1">
+                        Começar Agora
+                    </button>
+                    <button class="glass-btn px-8 py-4 rounded-xl text-white font-bold border border-white/20 hover:border-brand-green/50 hover:text-brand-green transition-all backdrop-blur-md flex items-center justify-center gap-3">
+                        <i class="fa-regular fa-circle-play"></i> Ver Demonstração
+                    </button>
+                </div>
+
+                <div class="mt-12 flex items-center gap-6 text-gray-500 text-sm font-medium">
+                    <div class="flex -space-x-3">
+                        <div class="w-10 h-10 rounded-full border-2 border-brand-dark bg-gray-700"></div>
+                        <div class="w-10 h-10 rounded-full border-2 border-brand-dark bg-gray-600"></div>
+                        <div class="w-10 h-10 rounded-full border-2 border-brand-dark bg-gray-500"></div>
+                    </div>
+                    <p>+500 empresas já unificaram</p>
+                </div>
+            </div>
+
+            <div class="relative" data-aos="fade-left" data-aos-duration="1200">
+                <div class="relative z-10 glass-card p-6 rounded-2xl border border-white/10 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-xl shadow-2xl transform rotate-y-12 perspective-1000 float-animation">
+                    <div class="flex justify-between items-center mb-6 border-b border-white/10 pb-4">
+                        <div class="flex gap-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="text-xs text-gray-400">Grupo Único Dashboard</div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="w-1/3 space-y-3">
+                            <div class="h-16 rounded-lg bg-white/5 border border-white/5 p-3 flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-green-500/20 text-green-500 flex items-center justify-center"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="w-full">
+                                    <div class="h-2 w-12 bg-white/20 rounded mb-1"></div>
+                                    <div class="h-2 w-full bg-white/10 rounded"></div>
+                                </div>
+                            </div>
+                            <div class="h-16 rounded-lg bg-white/5 border border-white/5 p-3 flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-pink-500/20 text-pink-500 flex items-center justify-center"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="w-full">
+                                    <div class="h-2 w-12 bg-white/20 rounded mb-1"></div>
+                                    <div class="h-2 w-full bg-white/10 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-2/3 bg-brand-dark/50 rounded-lg p-4 border border-white/5">
+                            <div class="flex justify-end mb-4">
+                                <div class="bg-brand-blue/20 text-brand-blue text-xs px-3 py-2 rounded-tr-xl rounded-bl-xl rounded-tl-xl max-w-[80%]">
+                                    Olá! Como posso ajudar sua empresa hoje?
+                                </div>
+                            </div>
+                            <div class="flex justify-start">
+                                <div class="bg-white/10 text-white text-xs px-3 py-2 rounded-tl-xl rounded-br-xl rounded-tr-xl max-w-[80%]">
+                                    Gostaria de conhecer os planos do Grupo Único.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute -top-10 -right-10 w-20 h-20 glass-icon rounded-2xl flex items-center justify-center text-4xl text-brand-green border border-white/20 animate-float-delay-1">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="absolute bottom-10 -left-10 w-16 h-16 glass-icon rounded-2xl flex items-center justify-center text-3xl text-brand-blue border border-white/20 animate-float-delay-2">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-10 border-y border-white/5 bg-black/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center text-gray-500 text-sm mb-8 uppercase tracking-widest">Plataforma validada por grandes times</p>
+            <div class="flex flex-wrap justify-center gap-12 lg:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                <i class="fa-brands fa-aws text-4xl hover:text-white transition-colors"></i>
+                <i class="fa-brands fa-google text-4xl hover:text-white transition-colors"></i>
+                <i class="fa-brands fa-meta text-4xl hover:text-blue-500 transition-colors"></i>
+                <i class="fa-brands fa-shopify text-4xl hover:text-green-500 transition-colors"></i>
+                <i class="fa-brands fa-stripe text-4xl hover:text-indigo-400 transition-colors"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-5xl font-bold mb-6">Tudo em um <span class="text-brand-green">Único</span> lugar</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Esqueça as múltiplas abas e celulares espalhados. Gerencie toda sua comunicação com tecnologia de ponta.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card group p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 hover:border-brand-blue/50" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-blue/20 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Inbox Unificado</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Centralize WhatsApp, Instagram Direct, Facebook Messenger e Telegram em uma tela única.</p>
+                </div>
+
+                <div class="glass-card group p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 hover:border-brand-green/50" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-green/20 text-brand-green flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Chatbots Inteligentes</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Crie fluxos de automação sem código. Qualifique leads e atenda 24/7 sem intervenção humana.</p>
+                </div>
+
+                <div class="glass-card group p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 hover:border-purple-500/50" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Dashboard em Tempo Real</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Monitore o desempenho da sua equipe, tempo de resposta e satisfação do cliente.</p>
+                </div>
+
+                <div class="glass-card group p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 hover:border-yellow-500/50" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 rounded-2xl bg-yellow-500/20 text-yellow-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Gestão de Equipes</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Distribua atendimentos automaticamente por departamentos e acompanhe a produtividade.</p>
+                </div>
+
+                <div class="glass-card group p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 hover:border-pink-500/50" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Disparos em Massa</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Campanhas de marketing seguras e segmentadas via WhatsApp oficial (API Oficial).</p>
+                </div>
+
+                <div class="glass-card group p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 hover:border-cyan-500/50" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-plug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Integração API</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Conecte com seu CRM, ERP ou qualquer ferramenta via Webhooks e API aberta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-gradient-to-b from-brand-dark to-[#0f1420]">
+        <div class="max-w-6xl mx-auto rounded-[3rem] p-1 bg-gradient-to-br from-brand-blue to-brand-green shadow-[0_0_100px_-20px_rgba(68,118,255,0.3)]" data-aos="zoom-in">
+            <div class="bg-brand-card rounded-[2.8rem] overflow-hidden relative min-h-[500px] flex flex-col md:flex-row">
+                <div class="p-10 md:p-16 md:w-1/2 flex flex-col justify-center relative z-10">
+                    <h3 class="text-3xl font-bold mb-6">Interface intuitiva, <br>poderosa e <span class="text-brand-green">Dark Mode</span></h3>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check text-brand-green"></i> Organização por Kanban
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check text-brand-green"></i> Respostas rápidas gravadas
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <i class="fa-solid fa-check text-brand-green"></i> Etiquetas e categorização
+                        </li>
+                    </ul>
+                    <button class="w-fit text-brand-blue font-bold group flex items-center gap-2 hover:gap-4 transition-all">
+                        Explorar interface <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="md:w-1/2 bg-gray-800/50 relative">
+                    <div class="absolute top-10 left-10 right-0 bottom-0 bg-brand-dark rounded-tl-3xl border-l border-t border-white/10 shadow-2xl p-6">
+                        <div class="flex gap-4 mb-6">
+                            <div class="w-16 h-16 rounded-full bg-gray-700"></div>
+                            <div class="space-y-2 py-2">
+                                <div class="w-32 h-3 bg-gray-700 rounded"></div>
+                                <div class="w-20 h-3 bg-gray-800 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="w-full h-12 bg-gray-800/50 rounded-r-xl rounded-bl-xl"></div>
+                            <div class="w-3/4 h-12 bg-brand-blue/20 rounded-l-xl rounded-br-xl ml-auto"></div>
+                            <div class="w-1/2 h-12 bg-brand-blue/20 rounded-l-xl rounded-br-xl ml-auto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 text-center relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-green/10 rounded-full blur-[120px] -z-10"></div>
+
+        <div class="max-w-4xl mx-auto" data-aos="fade-up">
+            <h2 class="text-4xl lg:text-6xl font-black mb-8">Pronto para <span class="text-brand-blue">evoluir</span> seu atendimento?</h2>
+            <p class="text-xl text-gray-400 mb-12">Junte-se ao Grupo Único e tenha o controle total da sua comunicação empresarial.</p>
+            
+            <a href="#" class="inline-block px-10 py-5 rounded-full bg-brand-green text-brand-dark text-lg font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(113,255,74,0.3)]">
+                Falar com especialista agora
+            </a>
+            <p class="mt-6 text-sm text-gray-500">Sem compromisso. Teste gratuito disponível.</p>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 bg-black/40 pt-16 pb-8 px-6 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-12">
+            <div class="col-span-1 md:col-span-2">
+                 <img src="img/logo.webp" alt="Grupo Único" class="w-32 brightness-0 invert mb-6 opacity-80">
+                <p class="text-gray-400 max-w-sm">Soluções integradas de comunicação para empresas que buscam alta performance e satisfação do cliente.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 text-white">Plataforma</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-brand-green transition-colors">Omnichannel</a></li>
+                    <li><a href="#" class="hover:text-brand-green transition-colors">Chatbots</a></li>
+                    <li><a href="#" class="hover:text-brand-green transition-colors">API Oficial</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 text-white">Legal</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-brand-green transition-colors">Termos de Uso</a></li>
+                    <li><a href="#" class="hover:text-brand-green transition-colors">Privacidade</a></li>
+                    <li><a href="#" class="hover:text-brand-green transition-colors">LGPD</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-gray-600 text-sm border-t border-white/5 pt-8">
+            &copy; 2024 Grupo Único Contato. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
